@@ -9,6 +9,7 @@ var session = require('express-session');
 // const mainRoute = require('./routes/main-routes');
 
 const authRoute = require('./routes/auth');
+const adminRoute  = require('./routes/admin');
 
 const PORT = process.env.PORT || 5000;
 
@@ -30,6 +31,7 @@ app.use(session({
 }))
 
 app.use('/', authRoute);
+app.use('/admin', adminRoute);
 
 app.use(function (req, res, next) {
   res.status(404).render('pages/404');
