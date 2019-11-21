@@ -63,13 +63,20 @@ border:1px solid;
     select a house: <input type="text" name="house" >    
     Select a file: <input type="file" name="myFile"> <button type="submit">Upload</button>        
 </form>
+<form action='/admin' method="POST" >
+    select a house: <input type="text" name="house" >    
+    Select a date(dd-mm-yyyy): <input type="text" name="date">  
+    add consumption: <input type="number" name="consumption" >    
+    <button type="submit">Upload</button> 
+</form>
 <div style="overflow-x:auto,  width:1000px; height: 100px;">
 	<p>Click the table headers to sort the  table accordingly:</p>
 	<table id="myTable" cellpadding="5" cellspacing="5"  style="height:50%;">
         <tr>
-        <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(1)')" style="cursor:pointer">Foyer</th>
+        <th onclick="w3.sortHTML('#myTable', '.item', 'td:{{@key}}')" style="cursor:pointer">Foyer</th>
+        {{this}}
         {{#each c.A}}
-        <th>
+        <th onclick="w3.sortHTML('#myTable', '.item', 'td:{{this}}')" style="cursor:pointer">
             {{@key}}
         </th>
         {{/each}}
