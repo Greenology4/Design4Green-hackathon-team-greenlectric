@@ -6,10 +6,10 @@ const bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 
-// const mainRoute = require('./routes/main-routes');
 
 const authRoute = require('./routes/auth');
 const adminRoute  = require('./routes/admin');
+const mainRoute  = require('./routes/main');
 
 const PORT = process.env.PORT || 5000;
 
@@ -32,6 +32,7 @@ app.use(session({
 
 app.use('/', authRoute);
 app.use('/admin', adminRoute);
+app.use('/dashboard', mainRoute);
 
 app.use(function (req, res, next) {
   res.status(404).send('404');

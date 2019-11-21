@@ -4,6 +4,10 @@
             "Foyer": "A",
             "password": "wxRKsjRGzwOph"
         }, 
+        "D4G2019": {
+            "password": "D4G2019",
+            "admin": true
+        },
         "dupontbernard": {
             "Foyer": "B",
             "password": "bFUhPDJhSRV22"
