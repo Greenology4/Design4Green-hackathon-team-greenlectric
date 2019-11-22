@@ -6,7 +6,7 @@ var multer  = require('multer');
 var upload = multer({ dest: 'uploads/' });
 
 //Get all houses info 
-router.get('/', (req, res) => {
+router.get('/', isLoggedIn, (req, res) => {
    
     fs.readFile(file_path, (err, data) => {
         if (err) throw err;
@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
     });
 });
 
-router.post('/',upload.single('myFile'), (req, res) => {
+router.post('/',isLoggedIn ,upload.single('myFile'), (req, res) => {
     console.log('Here');
     
     if(req.body.consumption){

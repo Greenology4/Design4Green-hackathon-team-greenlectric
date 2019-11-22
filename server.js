@@ -37,5 +37,17 @@ app.use('/dashboard', mainRoute);
 app.use(function (req, res, next) {
   res.status(404).send('404');
 });
+
+hbs.registerHelper("math", function(lvalue, operator, rvalue) {
+  lvalue = parseFloat(lvalue);
+  rvalue = parseFloat(rvalue);
+  return {
+      "+": lvalue + rvalue,
+      "-": lvalue - rvalue,
+      "*": lvalue * rvalue,
+      "/": lvalue / rvalue,
+      "%": lvalue % rvalue
+  }[operator];
+});
   
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
