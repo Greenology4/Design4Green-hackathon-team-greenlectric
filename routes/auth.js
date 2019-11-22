@@ -6,7 +6,7 @@ const bcrypt = require('bcryptjs')
 const file_path = 'data1.json';
 
 router.get('/login', (req, res) => {
-    if (req.isAuthenticated()) {
+    if (req.session.info) {
         return res.redirect('/');
     }
     res.render('login');
@@ -35,8 +35,6 @@ router.post('/login', (req, res, next) => {
 
         try {
             if(bcrypt.compareSync(password, info.users[username]['password'])) {
-                console.log('Came');
-                
                 req.session.info = {};
                 req.session.info.username = Object.keys(info.users)[0];
                 req.session.info.foyer = info.users[username]['Foyer'];
@@ -44,29 +42,18 @@ router.post('/login', (req, res, next) => {
                 req.session.info.owner = info.owner[req.session.info.foyer]
                 req.session.info.renter = info.renter[req.session.info.foyer]
                 req.session.info.consumption = info.consumption[req.session.info.foyer]
-                return res.redirect('/')                
+                return res.redirect('/user')                
             } else {
-                console.log('c');
-                
                 return res.redirect('/login')    
             }
         } catch(e) {
             console.log(e);
-            
-            console.log('d');
-            
             return res.redirect('/login')
         }
         
     
     });
 });
-
-router.get('/', isLoggedIn, (req, res) => {
-    // console.log(req.session);
-    res.send('Hello');
-    
-})
 
 router.get('/logout', (req, res) => {
     try {
@@ -84,22 +71,58 @@ router.get('/signup', (req, res) => {
 router.post('/signup', (req, res) => {
     var body = req.body,
         username = body.username,
-        email = body.email,
         password = body.password,
-        rePassword = body.repassword,
-        token = body.token,
-        role = body.role;
+        confirm_password = body.confirm_password,
+        foyer = body.foyer,
+        house_type = body.house_type,
+        surface = body.surface,
+        pieces = body.pieces,
+        chauffage = body.chauffage,
+        year_of_construction = body.year_of_construction
+        house_no = body.house_no;
+        street = body.street;
+        pincode = body.pincode,
+        city = body.city,
+        owners_firstname = body.owners_firstname,
+        owners_lastname = body.owners_lastname
+        renters_firstname = body.renters_firstname,
+        renters_lastname = body.renters_lastname
 
+        if(password == confirm_password) {
+            fs.readFile(file_path, (err, data) => {
+                if (err) throw err;
+                bcrypt.hash(password, 10, (err, hash) => {
+                    var info = JSON.parse(data);
+                    info.users[username] = {
+                        "Foyer": foyer,
+                        "password": ""
+                    }
+                    info['users'][username]['password'] = hash;
+                    info['Houses'][foyer]['type'] = house_type;
+                    info['Houses'][foyer]['surface'] = surface;
+                    info['Houses'][foyer]['pieces'] = pieces;
+                    info['Houses'][foyer]['chauffage'] = chauffage;
+                    info['Houses'][foyer]['annee-de-construction'] = year_of_construction;
+                    info['Houses'][foyer]['no-de-voie'] = house_no;
+                    info['Houses'][foyer]['voie'] = street;
+                    info['Houses'][foyer]['code-postal'] = pincode;
+                    info['Houses'][foyer]['ville'] = city;
+                    info['owner'][foyer]['nom'] = owners_lastname;
+                    info['owner'][foyer]['prenom'] = owners_firstname;
+                    info['renter'][foyer]['nom'] = renter_lastname;
+                    info['renter'][foyer]['prenom'] = renter_firstname;
+                    
+                    fs.writeFile(file_path, JSON.stringify(info), function(err1) {
+                        if(err1) {
+                            return console.log(err1);
+                        }
+                        return res.redirect('/login');
+                    });
+                }); 
+            });
+        } else {
+            return res.redirect('/signup');
+        }
 });
 
 module.exports = router;
-
-function isLoggedIn(req, res, next) {
-    console.log(req.session.info);
-    
-    if (req.session.info) {
-        next()
-    } else {
-        return res.redirect('/login');
-    }
-}

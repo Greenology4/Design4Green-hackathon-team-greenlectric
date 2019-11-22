@@ -1,89 +1,99 @@
 
 <h2>Create Account</h2>
 
-    <form method="post" style="allign:center" action="">
+    <form method="post"action="">
         
 
 <table>
-  <tr>
-    <td>Name</td>
-	
-    <td><input type="text" name="name" placeholder = "Name" required></td> 
-    
-  </tr>
-  <tr>
-    <td>Lsast Name</td>
-	
-    <td><input type="text" name="lastname" placeholder = "Last Name" required></td> 
-    
-  </tr>
-  <tr>
-    <td>Number</td>
-    <td><input type="tel" name="phone_number"></td> 
-    
-  </tr>
-  <tr>
-    <td>Email</td>
-    <td><input type="tel" name="email"></td> 
-    
-  </tr>
+    <tr>
+        <td>User name</td>
+        <td><input type="text" placeholder="Enter Username" name="username" required>
+        </td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="password" placeholder="Enter Password" name="password" required></td> 
+        
+    </tr>
+    <tr>
+        <td>Confirm password</td>
+        <td><input type="password" placeholder="Enter Password" name="confirm_password" required></td> 
+        
+    </tr>
+  
+    <tr>
+        <td>Foyer</td>       
+        <td><input type="text" name="foyer" placeholder = "Foyer" required></td>       
+    </tr>
 
-  <tr>
-    <td>Type Of House</td>
-    <td><select id="type_house" name="type_house">
-<option value="" selected="selected">Select One</option>
-<option value="1" >1</option>
-<option value="0" >0</option>
-</select></td> 
-    
-  </tr>
+    <tr>
+        <td>Type Of House</td>
+        <td><select id="house_type" name="house_type">
+            <option value="" selected="selected">Select One</option>
+            <option value="1" >1</option>
+            <option value="0" >0</option>
+        </select></td> 
+    </tr>
 
-  <tr>
-    <td>Number Of House</td>
-    <td><input type="text" name="house_no"></td> 
-    
-  </tr>
+    <tr>
+        <td>Surface</td>
+        <td><input type="text" name="surface"></td>
+    </tr>
 
-  <tr>
-    <td>Street</td>
-    <td><input type="text" name="street"></td> 
-    
-  </tr>
+    <tr>
+        <td>Pieces</td>
+        <td><input type="text" name="pieces"></td>
+    </tr>
 
-  <tr>
-    <td>City</td>
-    <td><input type="text" name="city"></td> 
-    
-  </tr>
-  <tr>
-    <td>Pincode</td>
-    <td><input type="number" name="pincode"></td> 
-    
-  </tr>
+    <tr>
+        <td>Chauffage</td>
+        <td><input type="text" name="chauffage"></td>
+    </tr>
 
-  <tr>
-    <td>Country</td>
-    <td><input type="text" name="country"></td> 
-    
-  </tr>
+    <tr>
+        <td>Year Of Construction</td>
+        <td><input type="text" name="year_of_construction"></td>
+    </tr>
 
+    <tr>
+        <td>House number</td>
+        <td><input type="text" name="house_no"></td> 
+        
+    </tr>
 
+    <tr>
+        <td>Street</td>
+        <td><input type="text" name="street"></td> 
+        
+    </tr>
 
-  <tr>
-    <td>User name</td>
-    <td><input type="text" placeholder="Enter Username" name="username" required>
-	</td>
-  </tr>
-  <tr>
-    <td>Password</td>
-    <td><input type="password" placeholder="Enter Password" name="password" required></td> 
-    
-  </tr>
-  <tr>
-    <td>Confirm password</td>
-    <td><input type="password" placeholder="Enter Password" name="confirm_password" required></td> 
-    
-  </tr>
+    <tr>
+        <td>Pincode</td>
+        <td><input type="number" name="pincode"></td> 
+    </tr>
+
+    <tr>
+        <td>City</td>
+        <td><input type="text" name="city"></td> 
+    </tr>
+
+    <tr>
+        <td>Owner's first name</td>
+        <td><input type="text" name="owners_firstname" placeholder = "First Name" required></td> 
+    </tr>
+    <tr>
+        <td>Owner's last name</td>
+        <td><input type="text" name="owners_lastname" placeholder = "Last Name" required></td> 
+    </tr>
+
+    <tr>
+        <td>Renter's first name</td>
+        <td><input type="text" name="renters_firstname" placeholder = "First Name" required></td> 
+    </tr>
+    <tr>
+        <td>Renter's last name</td>
+        <td><input type="text" name="renters_lastname" placeholder = "Last Name" required></td> 
+    </tr>
 
   <tr>
     <td></td>

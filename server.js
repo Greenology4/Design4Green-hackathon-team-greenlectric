@@ -9,6 +9,7 @@ var session = require('express-session');
 // const mainRoute = require('./routes/main-routes');
 
 const authRoute = require('./routes/auth');
+const mainRoute = require('./routes/main');
 
 const PORT = process.env.PORT || 5000;
 
@@ -29,10 +30,15 @@ app.use(session({
   cookie: { maxAge: 3600000 }
 }))
 
+app.use('/', mainRoute);
 app.use('/', authRoute);
 
 app.use(function (req, res, next) {
   res.status(404).send('404');
+});
+
+hbs.registerHelper('json', function(context) {
+    return JSON.stringify(context);
 });
   
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`));

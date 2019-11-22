@@ -70,11 +70,11 @@
         },
         "asterix":{
             "Foyer": "Q",
-            "password": "89VWxOiQXTSO7"
+            "password": "$2a$10$gaIrMQKRwWiVgr3PEohCgeFoFNt8iItvJ5Ezyd4o0OcJgCFkJDLUO"
         },
         "Obélix":{
             "Foyer": "R",
-            "password": "SBPJkSBmMTdGV"
+            "password": "$2a$10$shtSqs08fa2P5QpbQDHbD.7agu29H/l2ordUPWF9QfefImXXxUj/y"
         },
         "Kouign-amann":{
             "Foyer": "S",
@@ -113,328 +113,326 @@
     "Houses": {
         "A": {
             "type": "0",
-            "Surface": "70",
-            "Pièces": "3",
-            "Chauffage": "fuel",
-            "Année de construction": "1908",
-            "n° de voie": "1",
-            "Voie 1": "impasse des Lilas",
-            "code postal": "10220",
-            "ville": "Assencières",
-            "Nom": "Pierre ",
-            "Prénom": "Martin"
+            "surface": "70",
+            "pieces": "3",
+            "chauffage": "fuel",
+            "annee-de-construction": "1908",
+            "no-de-voie": "1",
+            "voie": "impasse des Lilas",
+            "code-postal": "10220",
+            "ville": "Assencières"
         },
        "B": {
             "type": "1",
-            "Surface": "69",
-            "Pièces": "3",
-            "Chauffage": "électricité",
-            "Année de construction": "2010",
-            "n° de voie": "130",
-            "Voie 1": "Boulevard du Général Foch",
-            "code postal": "11580",
+            "surface": "69",
+            "pieces": "3",
+            "chauffage": "électricité",
+            "annee-de-construction": "2010",
+            "no-de-voie": "130",
+            "voie": "Boulevard du Général Foch",
+            "code-postal": "11580",
             "ville": "Véraza"
         },
         "C":{
             "type": "1",
-            "Surface": "75",
-            "Pièces": "4",
-            "Chauffage": "gaz",
-            "Année de construction": "1975",
-            "n° de voie": "1",
-            "Voie 1": "Allée du Passant",
-            "code postal": "12490",
+            "surface": "75",
+            "pieces": "4",
+            "chauffage": "gaz",
+            "annee-de-construction": "1975",
+            "no-de-voie": "1",
+            "voie": "Allée du Passant",
+            "code-postal": "12490",
             "ville": "La Bastide-Pradines"
         },
         "D":{
             "type": "0",
-            "Surface": "55",
-            "Pièces": "2",
-            "Chauffage": "électricité",
-            "Année de construction": "1969",
-            "n° de voie": "93",
-            "Voie 1": "Avenue du Maréchal Juin",
-            "code postal": "13980",
+            "surface": "55",
+            "pieces": "2",
+            "chauffage": "électricité",
+            "annee-de-construction": "1969",
+            "no-de-voie": "93",
+            "voie": "Avenue du Maréchal Juin",
+            "code-postal": "13980",
             "ville": "Alleins"
         },
         "E":{
             "type": "0",
-            "Surface": "49",
-            "Pièces": "3",
-            "Chauffage": "gaz",
-            "Année de construction": "1949",
-            "n° de voie": "6",
-            "Voie 1": "Place des Marronniers",
-            "code postal": "14117",
+            "surface": "49",
+            "pieces": "3",
+            "chauffage": "gaz",
+            "annee-de-construction": "1949",
+            "no-de-voie": "6",
+            "voie": "Place des Marronniers",
+            "code-postal": "14117",
             "ville": "Arromanches-les-Bains"
         },
         "F":{
             "type": "1",
-            "Surface": "89",
-            "Pièces": "4",
-            "Chauffage": "électricité",
-            "Année de construction": "2000",
-            "n° de voie": "7 bis",
-            "Voie 1": "rue Guy de Maupassant",
-            "code postal": "15290",
+            "surface": "89",
+            "pieces": "4",
+            "chauffage": "électricité",
+            "annee-de-construction": "2000",
+            "no-de-voie": "7 bis",
+            "voie": "rue Guy de Maupassant",
+            "code-postal": "15290",
             "ville": "Cayrols"
         },
         "G":{
             "type": "0",
-            "Surface": "110",
-            "Pièces": "3",
-            "Chauffage": "électricité",
-            "Année de construction": "1918",
-            "n° de voie": "11",
-            "Voie 1": "avenue de l’armistice",
-            "code postal": "16140",
+            "surface": "110",
+            "pieces": "3",
+            "chauffage": "électricité",
+            "annee-de-construction": "1918",
+            "no-de-voie": "11",
+            "voie": "avenue de l’armistice",
+            "code-postal": "16140",
             "ville": "Barbezières"
         },
         "H":{
             "type": "0",
-            "Surface": "91",
-            "Pièces": "5",
-            "Chauffage": "fuel",
-            "Année de construction": "1939",
-            "n° de voie": "14",
-            "Voie 1": "boulevard de la libération",
-            "code postal": "17160",
+            "surface": "91",
+            "pieces": "5",
+            "chauffage": "fuel",
+            "annee-de-construction": "1939",
+            "no-de-voie": "14",
+            "voie": "boulevard de la libération",
+            "code-postal": "17160",
             "ville": "Blanzac-lès-Matha"
         },
         "I":{
             "type": "0",
-            "Surface": "73",
-            "Pièces": "4",
-            "Chauffage": "électricité",
-            "Année de construction": "1977",
-            "n° de voie": "3",
-            "Voie 1": "Chemin des carrioles",
-            "code postal": "18380",
+            "surface": "73",
+            "pieces": "4",
+            "chauffage": "électricité",
+            "annee-de-construction": "1977",
+            "no-de-voie": "3",
+            "voie": "Chemin des carrioles",
+            "code-postal": "18380",
             "ville": "La Chapelle-d'Angillon"
         },
         "J":{
             "type": "1",
-            "Surface": "84",
-            "Pièces": "3",
-            "Chauffage": "électricité",
-            "Année de construction": "2012",
-            "n° de voie": "5",
-            "Voie 1": "rue de l’escargot",
-            "code postal": "19200",
+            "surface": "84",
+            "pieces": "3",
+            "chauffage": "électricité",
+            "annee-de-construction": "2012",
+            "no-de-voie": "5",
+            "voie": "rue de l’escargot",
+            "code-postal": "19200",
             "ville": "Aix"
         },
         "K":{
             "type": "1",
-            "Surface": "77",
-            "Pièces": "3",
-            "Chauffage": "fuel",
-            "Année de construction": "1947",
-            "n° de voie": "6",
-            "Voie 1": "rue Albert Camus",
-            "code postal": "21110",
+            "surface": "77",
+            "pieces": "3",
+            "chauffage": "fuel",
+            "annee-de-construction": "1947",
+            "no-de-voie": "6",
+            "voie": "rue Albert Camus",
+            "code-postal": "21110",
             "ville": "Aiserey"
         },
         "L":{
             "type": "1",
-            "Surface": "69",
-            "Pièces": "3",
-            "Chauffage": "électricité",
-            "Année de construction": "2000",
-            "n° de voie": "7",
-            "Voie 1": "avenue des Batignolles",
-            "code postal": "22160",
+            "surface": "69",
+            "pieces": "3",
+            "chauffage": "électricité",
+            "annee-de-construction": "2000",
+            "no-de-voie": "7",
+            "voie": "avenue des Batignolles",
+            "code-postal": "22160",
             "ville": "Calanhel"
         },
         "M":{
             "type": "1",
-            "Surface": "91",
-            "Pièces": "4",
-            "Chauffage": "fuel",
-            "Année de construction": "1969",
-            "n° de voie": "120",
-            "Voie 1": "rue Balzac",
-            "code postal": "23160",
+            "surface": "91",
+            "pieces": "4",
+            "chauffage": "fuel",
+            "annee-de-construction": "1969",
+            "no-de-voie": "120",
+            "voie": "rue Balzac",
+            "code-postal": "23160",
             "ville": "Bazelat"
         },
         "N":{
             "type": "0",
-            "Surface": "89",
-            "Pièces": "4",
-            "Chauffage": "électricité",
-            "Année de construction": "1990",
-            "n° de voie": "69",
-            "Voie 1": "rue Jean-Baptiste Poclain",
-            "code postal": "24140",
+            "surface": "89",
+            "pieces": "4",
+            "chauffage": "électricité",
+            "annee-de-construction": "1990",
+            "no-de-voie": "69",
+            "voie": "rue Jean-Baptiste Poclain",
+            "code-postal": "24140",
             "ville": "Beauregard-et-Bassac"
         },
         "O":{
             "type": "0",
-            "Surface": "75",
-            "Pièces": "4",
-            "Chauffage": "gaz",
-            "Année de construction": "2000",
-            "n° de voie": "179",
-            "Voie 1": "chemin des Alouettes",
-            "code postal": "25270",
+            "surface": "75",
+            "pieces": "4",
+            "chauffage": "gaz",
+            "annee-de-construction": "2000",
+            "no-de-voie": "179",
+            "voie": "chemin des Alouettes",
+            "code-postal": "25270",
             "ville": "Arc-sous-Montenot"
         },
         "P":{
             "type": "1",
-            "Surface": "77",
-            "Pièces": "3",
-            "Chauffage": "gaz",
-            "Année de construction": "1999",
-            "n° de voie": "45",
-            "Voie 1": "boulevard Jules Vernes",
-            "code postal": "26570",
+            "surface": "77",
+            "pieces": "3",
+            "chauffage": "gaz",
+            "annee-de-construction": "1999",
+            "no-de-voie": "45",
+            "voie": "boulevard Jules Vernes",
+            "code-postal": "26570",
             "ville": "Barret-de-Lioure"
         },
         "Q":{
             "type": "0",
-            "Surface": "64",
-            "Pièces": "3",
-            "Chauffage": "fuel",
-            "Année de construction": "1975",
-            "n° de voie": "3",
-            "Voie 1": "place du Commerce",
-            "code postal": "27820",
+            "surface": "64",
+            "pieces": "3",
+            "chauffage": "fuel",
+            "annee-de-construction": "1975",
+            "no-de-voie": "3",
+            "voie": "place du Commerce",
+            "code-postal": "27820",
             "ville": "Armentières-sur-Avre"
         },
         "R":{
             "type": "1",
-            "Surface": "63",
-            "Pièces": "3",
-            "Chauffage": "fuel",
-            "Année de construction": "1984",
-            "n° de voie": "111",
-            "Voie 1": "avenue Albert Camus",
-            "code postal": "28480",
+            "surface": "63",
+            "pieces": "3",
+            "chauffage": "fuel",
+            "annee-de-construction": "1984",
+            "no-de-voie": "111",
+            "voie": "avenue Albert Camus",
+            "code-postal": "28480",
             "ville": "Beaumont-les-Autels"
         },
         "S":{
             "type": "1",
-            "Surface": "149",
-            "Pièces": "5",
-            "Chauffage": "électricité",
-            "Année de construction": "1999",
-            "n° de voie": "5",
-            "Voie 1": "rue du Petit Prince",
-            "code postal": "29620",
+            "surface": "149",
+            "pieces": "5",
+            "chauffage": "électricité",
+            "annee-de-construction": "1999",
+            "no-de-voie": "5",
+            "voie": "rue du Petit Prince",
+            "code-postal": "29620",
             "ville": "Lanmeur"
         },
         "T":{
             "type": "0",
-            "Surface": "99",
-            "Pièces": "4",
-            "Chauffage": "gaz",
-            "Année de construction": "2001",
-            "n° de voie": "7",
-            "Voie 1": "boulevard du Général de Gaulle",
-            "code postal": "30390",
+            "surface": "99",
+            "pieces": "4",
+            "chauffage": "gaz",
+            "annee-de-construction": "2001",
+            "no-de-voie": "7",
+            "voie": "boulevard du Général de Gaulle",
+            "code-postal": "30390",
             "ville": "Aramon"
         },
         "U":{
             "type": "0",
-            "Surface": "89",
-            "Pièces": "4",
-            "Chauffage": "fuel",
-            "Année de construction": "1981",
-            "n° de voie": "11",
-            "Voie 1": "rue du Maréchal Joffre",
-            "code postal": "31470",
+            "surface": "89",
+            "pieces": "4",
+            "chauffage": "fuel",
+            "annee-de-construction": "1981",
+            "no-de-voie": "11",
+            "voie": "rue du Maréchal Joffre",
+            "code-postal": "31470",
             "ville": "Cambernard"
         },
         "V":{
             "type": "0",
-            "Surface": "71",
-            "Pièces": "4",
-            "Chauffage": "gaz",
-            "Année de construction": "1989",
-            "n° de voie": "7",
-            "Voie 1": "rue du 11 Novembre",
-            "code postal": "32230",
+            "surface": "71",
+            "pieces": "4",
+            "chauffage": "gaz",
+            "annee-de-construction": "1989",
+            "no-de-voie": "7",
+            "voie": "rue du 11 Novembre",
+            "code-postal": "32230",
             "ville": "Armentieux"
         },
         "W":{
             "type": "1",
-            "Surface": "61",
-            "Pièces": "3",
-            "Chauffage": "gaz",
-            "Année de construction": "1984",
-            "n° de voie": "5",
-            "Voie 1": "avenue du 8 mai 1945",
-            "code postal": "33800",
+            "surface": "61",
+            "pieces": "3",
+            "chauffage": "gaz",
+            "annee-de-construction": "1984",
+            "no-de-voie": "5",
+            "voie": "avenue du 8 mai 1945",
+            "code-postal": "33800",
             "ville": "Bordeaux"
         },
         "X":{
             "type": "1",
-            "Surface": "51",
-            "Pièces": "2",
-            "Chauffage": "électricité",
-            "Année de construction": "2010",
-            "n° de voie": "73",
-            "Voie 1": "rue Victor Hugo",
-            "code postal": "34220",
+            "surface": "51",
+            "pieces": "2",
+            "chauffage": "électricité",
+            "annee-de-construction": "2010",
+            "no-de-voie": "73",
+            "voie": "rue Victor Hugo",
+            "code-postal": "34220",
             "ville": "Boisset"
         },
         "Y":{
             "type": "1",
-            "Surface": "55",
-            "Pièces": "3",
-            "Chauffage": "fuel",
-            "Année de construction": "1973",
-            "n° de voie": "1",
-            "Voie 1": "allée Crapeau",
-            "code postal": "35190",
+            "surface": "55",
+            "pieces": "3",
+            "chauffage": "fuel",
+            "annee-de-construction": "1973",
+            "no-de-voie": "1",
+            "voie": "allée Crapeau",
+            "code-postal": "35190",
             "ville": "Cardroc"
         },
         "Z":{
             "type": "0",
-            "Surface": "56",
-            "Pièces": "3",
-            "Chauffage": "gaz",
-            "Année de construction": "1993",
-            "n° de voie": "55",
-            "Voie 1": "rue des Fonderies",
-            "code postal": "36120",
+            "surface": "56",
+            "pieces": "3",
+            "chauffage": "gaz",
+            "annee-de-construction": "1993",
+            "no-de-voie": "55",
+            "voie": "rue des Fonderies",
+            "code-postal": "36120",
             "ville": "Étrechet"
         }
     },
 
     "owner": {
         "A":{
-            "Nom": "Pierre ",
-            "Prénom": "Martin"
+            "nom": "Pierre ",
+            "prenom": "Martin"
         },
         "B":{
             "Société": "Société HLM de l’Aude (SHA)"
         },
         "C":{
-            "Nom": "Albert",
-            "Prénom": "Courcoul"
+            "nom": "Albert",
+            "prenom": "Courcoul"
         },
         "D":{
-            "Nom": "Frédéric",
-            "Prénom": "Marchand"
+            "nom": "Frédéric",
+            "prenom": "Marchand"
         },
         "E":{
             "Société": "SCI Arro & Cie"
         },
         "F":{
-            "Nom": "Jean-Charles",
-            "Prénom": "Monvoisin"
+            "nom": "Jean-Charles",
+            "prenom": "Monvoisin"
         },
         "G":{
-            "Nom": "Guy",
-            "Prénom": "Durand"
+            "nom": "Guy",
+            "prenom": "Durand"
         },
         "H":{
-            "Nom": "Maeva",
-            "Prénom": "Livet"
+            "nom": "Maeva",
+            "prenom": "Livet"
         },
         "I": {
-            "Nom": "Alizée",
-            "Prénom": "Lieau"
+            "nom": "Alizée",
+            "prenom": "Lieau"
         },
         "J":{
             "Société": "Aixoise d’HLM"
@@ -455,12 +453,12 @@
             "Société": "SCI des Alouettes"
         },
         "P":{
-            "Nom": "Alexandre",
-            "Prénom": "Jaures"
+            "nom": "Alexandre",
+            "prenom": "Jaures"
         },
         "Q":{
-            "Nom": "Norbert",
-            "Prénom": "Detressangle"
+            "nom": "Norbert",
+            "prenom": "Detressangle"
         },
         "R":{
             "Société": "SCI USSE"
@@ -469,137 +467,137 @@
             "Société": "SCI THOMSON"
         },
         "T":{
-            "Nom": "Théodore",
-            "Prénom": "Javel"
+            "nom": "Théodore",
+            "prenom": "Javel"
         },
         "U": {
             "Société": "OCCITANIE HLM"
         },
         "V":{
-            "Nom": "Pascal",
-            "Prénom": "Alison"
+            "nom": "Pascal",
+            "prenom": "Alison"
         },
         "W":{
-            "Nom": "Dominique",
-            "Prénom": "Sarment"
+            "nom": "Dominique",
+            "prenom": "Sarment"
         },
         "X": {
-            "Nom": "Clément",
-            "Prénom": "Poirrier"
+            "nom": "Clément",
+            "prenom": "Poirrier"
         },
         "Y":{
             "Société": "MALOUIN HABITAT"
         },
         "Z":{
-            "Nom": "Gertrude",
-            "Prénom": "Coréa"
+            "nom": "Gertrude",
+            "prenom": "Coréa"
         }
     },
 
     "renter": {
         "A": {
-            "Nom": "Pierre ",
-            "Prénom": "Martin"
+            "nom": "Pierre ",
+            "prenom": "Martin"
         },
         "B": {
-            "Nom": "Micheline",
-            "Prénom": "Dupond"
+            "nom": "Micheline",
+            "prenom": "Dupond"
         },
         "C": {
-            "Nom": "Albert",
-            "Prénom": "Courcoul"
+            "nom": "Albert",
+            "prenom": "Courcoul"
         },
         "D":{
-            "Nom": "Frédéric",
-            "Prénom": "Marchand"
+            "nom": "Frédéric",
+            "prenom": "Marchand"
         },
         "E":{
-            "Nom": "Camille",
-            "Prénom": "Prudence"
+            "nom": "Camille",
+            "prenom": "Prudence"
         },
         "F": {
-            "Nom": "Jean-Charles",
-            "Prénom": "Monvoisin"
+            "nom": "Jean-Charles",
+            "prenom": "Monvoisin"
         },
         "G": {
-            "Nom": "Guy",
-            "Prénom": "Durand"
+            "nom": "Guy",
+            "prenom": "Durand"
         },
         "H": {
-            "Nom": "Maeva",
-            "Prénom": "Livet"
+            "nom": "Maeva",
+            "prenom": "Livet"
         },
         "I": {
-            "Nom": "Alizée",
-            "Prénom": "Lieau"
+            "nom": "Alizée",
+            "prenom": "Lieau"
         },
         "J":{
-            "Nom": "Ségolène",
-            "Prénom": "Marchive"
+            "nom": "Ségolène",
+            "prenom": "Marchive"
         },
         "K": {
-            "Nom": "Claude",
-            "Prénom": "Dorré"
+            "nom": "Claude",
+            "prenom": "Dorré"
         },
         "L": {
-            "Nom": "Dorothée",
-            "Prénom": "Tavel"
+            "nom": "Dorothée",
+            "prenom": "Tavel"
         },
         "M": {
-            "Nom": "Antoine",
-            "Prénom": "Dumont"
+            "nom": "Antoine",
+            "prenom": "Dumont"
         },
         "N":{
-            "Nom": "David",
-            "Prénom": "Alliaume"
+            "nom": "David",
+            "prenom": "Alliaume"
         },
         "O": {
-            "Nom": "Guillaume",
-            "Prénom": "Blais"
+            "nom": "Guillaume",
+            "prenom": "Blais"
         },
         "P": {
-            "Nom": "Alexandre",
-            "Prénom": "Jaures"
+            "nom": "Alexandre",
+            "prenom": "Jaures"
         },
         "Q":{
-            "Nom": "Norbert",
-            "Prénom": "Detressangle"
+            "nom": "Norbert",
+            "prenom": "Detressangle"
         },
         "R":{
-            "Nom": "Philibert",
-            "Prénom": "Usse"
+            "nom": "Philibert",
+            "prenom": "Usse"
         },
         "S": {
-            "Nom": "Arthur",
-            "Prénom": "Martin"
+            "nom": "Arthur",
+            "prenom": "Martin"
         },
         "T":{
-            "Nom": "Théodore",
-            "Prénom": "Javel"
+            "nom": "Théodore",
+            "prenom": "Javel"
         },
         "U": {
-            "Nom": "Bruno",
-            "Prénom": "Bienvenue"
+            "nom": "Bruno",
+            "prenom": "Bienvenue"
         },
         "V": {
-            "Nom": "Pascal",
-            "Prénom": "Alison"
+            "nom": "Pascal",
+            "prenom": "Alison"
         },
         "W" :{
-            "Nom": "Dominique",
-            "Prénom": "Sarment"
+            "nom": "Dominique",
+            "prenom": "Sarment"
         },
         "X":{
-            "Nom": "Clément",
-            "Prénom": "Poirrier"
+            "nom": "Clément",
+            "prenom": "Poirrier"
         },
         "Y":{
-            "Nom": "Benoît",
-            "Prénom": "Luccetti"
+            "nom": "Benoît",
+            "prenom": "Luccetti"
         },
         "Z": {
-            "Nom": "Gertrude",
-            "Prénom": "Coréa"
+            "nom": "Gertrude",
+            "prenom": "Coréa"
         }
     },
 
