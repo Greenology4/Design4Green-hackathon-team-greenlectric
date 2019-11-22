@@ -64,8 +64,9 @@ function isLoggedInAdmin(req, res, next) {
     if ('info' in req.session) {
         if(req.session.info.username == "D4G2019") {
             next()
+        } else {
+            return res.redirect('/logout');
         }
-        return res.redirect('/logout');
     }
     else {
         return res.redirect('/logout');

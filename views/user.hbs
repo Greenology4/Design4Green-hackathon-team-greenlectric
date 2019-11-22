@@ -57,53 +57,47 @@
         table td {
             border: 1px solid;
         }
+        a, a::selection {
+            color:white;
+            text-decoration: none;
+        }
+
+        canvas {
+            margin: 30px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="btn-group">
-        
-    </div>
-    <form action='/logout' method="GET" >
-        <button type="submit"  class="button" style="float: right;">Logout </button>
-    </form>
-    <div style="width: 30%; display:inline-block">
+
+    <a class="btn-group" href="/logout"><button type="submit"  class="button" style="float: right;">Logout </button></a>
+
+    <canvas id="buyers" width="1000" height="400"></canvas>
+
+    <div>
+        <h2>Profile</h2>
         <b>User name:</b> {{info.username}} <br>
         <b>Foyer:</b> {{info.foyer}} <br>
         <b>Type Of House:</b> {{info.house.type}} <br>
         <b>Surface:</b> {{info.house.surface}} <br>
         <b>Pieces:</b> {{info.house.pieces}}
-    </div>
-
-    <div style="width: 30%; display:inline-block">
         <b>Chauffage:</b> {{info.house.chauffage}} <br>
         <b>Year Of Construction:</b> {{info.house.annee-de-construction}} <br>
         <b>House number:</b> {{info.house.no-de-voie}} <br>
         <b>Street:</b> {{info.house.voie}} <br>
         <b>Pincode:</b> {{info.house.code-postal}}
-    </div>
-
-    <div style="width: 30%; display:inline-block">
         <b>City:</b> {{info.house.ville}} <br>
         <b>Owner's first name:</b> {{info.owner.prenom}} <br>
         <b>Owner's last name:</b> {{info.owner.nom}} <br>
         <b>Renter's first name:</b> {{info.owner.prenom}} <br>
         <b>Renter's last name:</b> {{info.owner.nom}}
-    </div>
 
-    <div class="btn-group">
-        <br>
-        <form action='/file' method="GET" >
-            <button type="submit" >Download</button><br>
-        </form>
+        <a class="btn-group" style="margin-top: 10px;" href="/file"><button type="submit" >Download file</button></a>
     </div>
-
-    <canvas id="buyers" width="1000" height="400"></canvas>
 
     <h2>Consumption of electricity in table form</h2>
 
-    <h2>Sort Tables</h2>
-    <div style="overflow-x:auto,  width:1000px; height: 100px;">
+    <div style="overflow-x:auto,  max-width:1000px; height: 100px;">
         <p>Click the table headers to sort the table accordingly:</p>
 
         <table id="myTable" cellpadding="5" cellspacing="5" style="height:100%;">
@@ -120,21 +114,11 @@
             {{/each}}
         </table>
     </div>
+
+
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
     <script type="text/javascript">
-        function stringToDate(_date, _format, _delimiter) {
-            var formatLowerCase = _format.toLowerCase();
-            var formatItems = formatLowerCase.split(_delimiter);
-            var dateItems = _date.split(_delimiter);
-            var monthIndex = formatItems.indexOf("mm");
-            var dayIndex = formatItems.indexOf("dd");
-            var yearIndex = formatItems.indexOf("yyyy");
-            var month = parseInt(dateItems[monthIndex]);
-            month -= 1;
-            var formatedDate = new Date(dateItems[yearIndex], month, dateItems[dayIndex]);
-            return formatedDate;
-        }
         var info = {{{ json info }}};
 
         var dates = [];

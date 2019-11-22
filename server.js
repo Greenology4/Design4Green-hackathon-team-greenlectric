@@ -11,7 +11,7 @@ const authRoute = require('./routes/auth');
 const adminRoute  = require('./routes/admin');
 const mainRoute  = require('./routes/main');
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 80;
 
 var app = express();
 

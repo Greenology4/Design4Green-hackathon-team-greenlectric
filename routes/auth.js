@@ -24,11 +24,7 @@ router.post('/login', (req, res, next) => {
                 if("D4G2019" === username ){
                     req.session.info = {};
                     req.session.info.username = username;
-<<<<<<< HEAD
-                    return res.redirect('admin')
-=======
                     return res.redirect('/admin');
->>>>>>> 7644cb41a945fb435f1c3dedfb5ec075a8529f7c
                 } else{  
                     req.session.info = {};
                     req.session.info.username = username;
