@@ -18,11 +18,7 @@ router.get('/', isLoggedIn, (req, res) => {
 });
 
 router.post('/',isLoggedIn ,upload.single('myFile'), (req, res) => {
-    console.log('Here');
-    
-    if(req.body.consumption){
-        console.log("1");
-        
+    if(req.body.consumption){ 
         let id = req.body.house;
         let user_date = req.body.date
         let consumption = req.body.consumption;
@@ -44,7 +40,6 @@ router.post('/',isLoggedIn ,upload.single('myFile'), (req, res) => {
             
         });
     } else if(req.file) {
-        console.log("2");
         var house = req.body.house ;     
         var path = req.file.path;
         var file_path = 'file_paths.json';
@@ -60,15 +55,12 @@ router.post('/',isLoggedIn ,upload.single('myFile'), (req, res) => {
         });
     }
     else{
-        console.log("3");
-        
+        if (err) throw err
     }
 });
 
 
 function isLoggedIn(req, res, next) {
-    console.log(req.session.info);
-    
     if (req.session.info) {
         next()
     } else {

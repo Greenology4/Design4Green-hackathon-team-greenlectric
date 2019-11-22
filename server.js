@@ -30,9 +30,9 @@ app.use(session({
   cookie: { maxAge: 3600000 }
 }))
 
+app.use('/', mainRoute);
 app.use('/', authRoute);
 app.use('/admin', adminRoute);
-app.use('/dashboard', mainRoute);
 
 app.use(function (req, res, next) {
   res.status(404).send('404');
@@ -48,6 +48,10 @@ hbs.registerHelper("math", function(lvalue, operator, rvalue) {
       "/": lvalue / rvalue,
       "%": lvalue % rvalue
   }[operator];
+});
+
+hbs.registerHelper('json', function(context) {
+    return JSON.stringify(context);
 });
   
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
