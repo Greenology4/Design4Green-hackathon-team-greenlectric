@@ -7,7 +7,15 @@
             display: block;
             margin-top: 60px auto;
         }
-
+        .container {
+            padding: 16px;
+            align-content: center;
+            width: 30%;
+            display: block;
+            margin: 3px auto;
+            margin-top: 175px;
+            margin-top: -25px;
+        }
         .btn-group button {
             background-color: #4CAF50;
             border: 1px solid green;
@@ -53,7 +61,12 @@
 </head>
 
 <body>
-
+    <div class="btn-group">
+        
+    </div>
+    <form action='/logout' method="GET" >
+        <button type="submit"  class="button" style="float: right;">Logout </button>
+    </form>
     <div style="width: 30%; display:inline-block">
         <b>User name:</b> {{info.username}} <br>
         <b>Foyer:</b> {{info.foyer}} <br>
@@ -80,7 +93,9 @@
 
     <div class="btn-group">
         <br>
-        <button>Download</button><br>
+        <form action='/file' method="GET" >
+            <button type="submit" >Download</button><br>
+        </form>
     </div>
 
     <canvas id="buyers" width="1000" height="400"></canvas>

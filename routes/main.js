@@ -6,9 +6,16 @@ var dateFormat = require('dateformat');
 //Get all houses info 
 
 
-router.get('/test', (req, res) => {
-    var home = 'uploads/a35174ade58fc42b92c5f2a30e17625b';
-    return res.download(`./${home}`, 'document_uploaded.pdf');
+router.get('/file', (req, res) => {
+    var home_user = "A"
+    var file_path = 'file_paths.json';
+    fs.readFile(file_path, (err, data) => {
+        let info = JSON.parse(data);
+        path =info[home_user]
+        return res.download(`./${path}`, 'document_uploaded.pdf');
+    });
+    
+   
 })
 
 

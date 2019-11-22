@@ -6,7 +6,7 @@ var multer  = require('multer');
 var upload = multer({ dest: 'uploads/' });
 
 //Get all houses info 
-router.get('/', isLoggedIn, (req, res) => {
+router.get('/', isLoggedInAdmin, (req, res) => {
    
     fs.readFile(file_path, (err, data) => {
         if (err) throw err;
@@ -17,7 +17,7 @@ router.get('/', isLoggedIn, (req, res) => {
     });
 });
 
-router.post('/',isLoggedIn ,upload.single('myFile'), (req, res) => {
+router.post('/',isLoggedInAdmin ,upload.single('myFile'), (req, res) => {
     if(req.body.consumption){ 
         let id = req.body.house;
         let user_date = req.body.date
@@ -35,7 +35,7 @@ router.post('/',isLoggedIn ,upload.single('myFile'), (req, res) => {
                     if(err) throw err;
                 })
             } else {
-                throw err
+                if(err) throw err
             }
             
         });
@@ -60,11 +60,15 @@ router.post('/',isLoggedIn ,upload.single('myFile'), (req, res) => {
 });
 
 
-function isLoggedIn(req, res, next) {
-    if (req.session.info) {
-        next()
-    } else {
-        return res.redirect('/login');
+function isLoggedInAdmin(req, res, next) {
+    if ('info' in req.session) {
+        if(req.session.info.username == "D4G2019") {
+            next()
+        }
+        return res.redirect('/logout');
+    }
+    else {
+        return res.redirect('/logout');
     }
 }
 
