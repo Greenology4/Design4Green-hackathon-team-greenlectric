@@ -1,74 +1,20 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-        }
-
-        td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-        }
-
-        tr:nth-child(even) {
-        background-color: #dddddd;
-        }
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-       
-
-        button:hover {
-            opacity: 0.8;
-        }
-
-     
-        h2 {
-            margin-left: 5px;
-            margin-top: 90px;
-
-        }
-
-        /* Change styles for span and cancel button on extra small screens */
-        @media screen and (max-width: 300px) {
-            span.psw {
-                display: block;
-                float: none;
-
-            }
-        }
-    </style>
-</head>
 <body>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style type="text/css">
-        table{
-        border: 2px solid;
-    border-radius: 5px; 
-    border-collapse:collapse;
-    
-}
-table td{
-border:1px solid;
-}
-</style>
-
-<form action='/dashboard/test' method="GET">
-    Download file : <button type="submit"> </button>
+<form action='/logout' method="GET" >
+    <button type="submit"  class="button" style="float: right; background-color:black; color:white">Logout </button>
 </form>
-
 <form action='/admin' method="POST" enctype="multipart/form-data">  
     select a house: <input type="text" name="house" >    
     Select a file: <input type="file" name="myFile"> <button type="submit">Upload</button>        
 </form>
 <form action='/admin' method="POST" >
-    select a house: <input type="text" name="house" >    
+    select a house: 
+    <select name="house">
+        {{#each c}}
+           <option value="{{@key}}"> {{@key}}</option>
+        {{/each}}
+    
+  </select>    
     Select a date(dd-mm-yyyy): <input type="text" name="date">  
     add consumption: <input type="number" name="consumption" >    
     <button type="submit">Upload</button> 
@@ -172,24 +118,6 @@ for( var i=0; i<3; i++ ) {
 	}
 d = d.replace(/^0/,"");
 if( d < 10 ) { d = "0" + d; }
-if( /[a-z]/.test(m) ) {
-	m = m.substr(0,3);
-	switch(m) {
-		case "jan" : m = String(1); break;
-		case "feb" : m = String(2); break;
-		case "mar" : m = String(3); break;
-		case "apr" : m = String(4); break;
-		case "may" : m = String(5); break;
-		case "jun" : m = String(6); break;
-		case "jul" : m = String(7); break;
-		case "aug" : m = String(8); break;
-		case "sep" : m = String(9); break;
-		case "oct" : m = String(10); break;
-		case "nov" : m = String(11); break;
-		case "dec" : m = String(12); break;
-		default    : m = String(0);
-		}
-	}
 m = m.replace(/^0/,"");
 if( m < 10 ) { m = "0" + m; }
 y = parseInt(y);
